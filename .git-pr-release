@@ -2,4 +2,4 @@
     production = master
     staging = develop
 [pr-release]
-    labels = pr-release
+    template = .git-pr-template
