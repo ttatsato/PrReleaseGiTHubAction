@@ -24,7 +24,7 @@ jobs:
           GIT_PR_RELEASE_BRANCH_PRODUCTION:  release-prd
           GIT_PR_RELEASE_BRANCH_STAGING: develop
           GIT_PR_RELEASE_TITLE: "[prd] merge develop"
-          GIT_PR_RELEASE_TEMPLATE: ../git-pr-release/.git-pr-template
+          GIT_PR_RELEASE_TEMPLATE: .github/git-pr-release/.git-pr-template
         run: |
           gem install -N git-pr-release -v "1.2.0"
           git-pr-release --no-fetch
@@ -35,7 +35,7 @@ jobs:
           GIT_PR_RELEASE_BRANCH_PRODUCTION: release-stage
           GIT_PR_RELEASE_BRANCH_STAGING: develop
           GIT_PR_RELEASE_TITLE: "[stage] merge develop"
-          GIT_PR_RELEASE_TEMPLATE: ../git-pr-release/.git-pr-template
+          GIT_PR_RELEASE_TEMPLATE: .github/git-pr-release/.git-pr-template
         run: |
           gem install -N git-pr-release -v "1.2.0"
           git-pr-release --no-fetch
